@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import FilmList from '../components/FilmList';
 
 class FilmContainer extends Component {
@@ -36,11 +36,16 @@ class FilmContainer extends Component {
     }
     render() {
         return (
+            <Fragment>
             <div className="film-container">
                 <h2>Upcoming Film Releases for UK</h2>
                 <FilmList data={this.state.data} />
             </div>
-
+            
+            <div>
+                 <a href="https://www.imdb.com/calendar/?region=gb">More releases</a>
+            </div>
+            </Fragment>
         )
     }
 }
