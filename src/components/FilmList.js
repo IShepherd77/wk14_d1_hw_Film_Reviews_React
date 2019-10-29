@@ -11,7 +11,9 @@ class FilmList extends Component {
         });
         return (
             <div className="film-list">
+                <ol>
                 {filmNodes}
+                </ol>
             </div>
         )
     }
